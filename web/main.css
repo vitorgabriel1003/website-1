@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: 20px;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  background:white;
+  box-shadow: 3px 1px 1px black;
+}
+.box {
+  margin-left: 50px;
+  font-family: sans-serif;
+}
+.box h1 {
+  font-weight: bold;
+  font-size: 400%;
+  text-transform: uppercase;
+  color: rgb(43, 37, 37);
+}
+.box span {
+  text-transform: uppercase;
+  font-size: 400%;
+  font-weight: bold;
+  color: #022535;
+  margin: 0 10px;
+}
+.box p {
+  font-size: 150%;
+}
+.produto img {
+  margin: 0 30px;
+  width: 100%;
+}
+.box button {
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 30px;
+  font: bold normal 20px arial;
+  background: rgb(200,255,253);
+background: linear-gradient(90deg, rgb(111, 224, 221) 0%, rgba(59,194,186,1) 28%, rgba(58,69,224,1) 61%, rgb(1, 16, 150) 77%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.box button:hover {
+  background: rgb(200,255,253);
+  background: linear-gradient(90deg, rgb(73, 85, 194) 100%, rgb(27, 70, 67) 28%, rgba(58,69,224,1) 21%, rgba(61,74,184,1) 37%);
+}
+
+.sobre {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(2, 31, 58);;
+  text-align: center;
+}
+.sobre h1 {
+  color: rgb(255, 255, 255);
+  font: bold 250% arial;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sobre p {
+  font: lighter 150% arial;
+  margin-top: 30px;
+  color: white;
+}
+.beneficios {
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.beneficios h2 {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin-top: 100px;
+}
+.beneficios h1 {
+  font-size: 50pt;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.beneficios button {
+  width: 240px;
+  height: 60px;
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  text-transform: capitalize;
+  margin: 20px 0;
+  box-shadow: 1px 1px 1px black;
+  background: rgb(200,255,253);
+  background: linear-gradient(90deg, rgba(200,255,253,1) 0%, rgba(59,194,186,1) 28%, rgba(58,69,224,1) 61%, rgba(61,74,184,1) 77%);
+}
+.beneficios p {
+  font-size: 23px;
+}
+.motivos {
+  width: 100%;
+  height: 95vh;
+  background:rgb(3, 46, 87);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.motivos h2 {
+  margin-top: 150px;
+  font: lighter normal 40px arial;
+  color: rgb(2, 2, 2);
+}
+.motivos h1 {
+  margin-top: 15px;
+  font: bolder normal 60px arial;
+  color: rgb(10, 9, 9);
+}
+.motivos h1 span {
+  color: #076692;
+}
+
+.pos {
+  margin: 10px auto;
+}
+
+.pos span {
+  display: flex;
+}
+.pos img {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+.pos span p {
+  margin-left: 5px;
+  font-size: 200%;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  text-align: left;
+}
+.junte-se {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.junte-se h1 {
+  margin-top: 120px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.junte-se span {
+  color: rgb(0, 132, 255);;
+  font-weight: bold;
+}
+.carrossel {
+  box-shadow: 2px 2px 41px rgb(0, 132, 255);;
+  overflow: hidden;
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+}
+.slider-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 50vh;
+}
+#slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+#slider img {
+  object-fit: cover;
+  height: 400px;
+  width: 500px;
+}
+
+.junte-se button {
+  width: 420px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  font: bold normal 18px arial;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  cursor: pointer;
+  background: rgb(200,255,253);
+  background: linear-gradient(90deg, rgba(200,255,253,1) 0%, rgba(59,194,186,1) 28%, rgba(58,69,224,1) 61%, rgba(61,74,184,1) 77%);
+  transition: 0.3s;
+}
+.junte-se button:hover {
+ background-color: #0f5677;
+}
+.problemas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  background:rgb(0, 132, 255);
+  text-align: center;
+  color: white;
+}
+.problemas h2 {
+  margin-top: 100px;
+  font-size: 27pt;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.problemas h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+}
+.problemas h3 {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+}
+.mar {
+  display: flex;
+}
+.mar span {
+  margin-top: 20px;
+}
+.mar span p {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.venha {
+  width: 100%;
+  height: 100vh;
+  background:rgb(5, 43, 78);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.venha button {
+  width: 550px;
+  height: 40px;
+  font: lighter normal 20pt arial;
+  border: none;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.venha h1 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: white;
+  font-size: 37pt;
+  font-weight: bolder;
+}
+.box-2 {
+  display: flex;
+}
+.box-pro {
+  height: 540px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+.box-pro img {
+  width: 200px;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.box-pro button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #250d4b;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.box-pro button:hover {
+  transform: scale(1.1);
+  background-color: rgb(32, 53, 172);
+}
+.garantia {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(31, 31, 31);
+  text-transform: capitalize;
+}
+
+.tes {
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 40%;
+}
+.tes h2 {
+  font: lighter 40px sans-serif;
+  color: white;
+}
+.tes h1 {
+  font: bold normal 30pt arial;
+  color: white;
+}
+.tes h1 span {
+  color: rgb(29, 13, 175);
+}
+.tes p {
+  color: white;
+  font-size: 250%;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.img-garantia {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    height: 200vh;
+  }
+  .box h1,
+  .box span {
+    font-size: 220%;
+  }
+  .box button {
+    width: 200px;
+  }
+  .produto img {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .sobre h1 {
+    font-size: 110%;
+  }
+  .sobre {
+    height: 130vh;
+  }
+  .sobre p {
+    font-size: 110%;
+    margin: 0 10px;
+   font-weight:500 ;
+  }
+  .beneficios,.sobre,.header {
+    height: 10rem;
+  }
+  .beneficios h2 {
+    font-size: 130%;
+  }
+  .beneficios h1 {
+    font-size: 150%;
+  }
+  .beneficios button {
+    width: 140px;
+    height: 38px;
+    font-size: 150%;
+  }
+  .beneficios p {
+    font-size: 120%;
+    margin: 0 10px;
+  }
+  .motivos {
+    height: 120vh;
+  }
+  .motivos h2 {
+    margin-top: 30%;
+    font: bold normal 120% arial;
+  }
+  .motivos h1 {
+    font-size: 210%;
+  }
+  .motivos span {
+    margin: 0 10px;
+  }
+  .motivos span p {
+    font-size: 120%;
+  }
+  .junte-se h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .junte-se button {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .problemas {
+    height: 138vh;
+  }
+  .problemas h2 {
+    margin-top:50px ;
+    font-size: 130%;
+  }
+  .problemas h1 {
+    font-size: 140%;
+  }
+  .problemas h3 {
+    font-size: 110%;
+    margin: 0 5px;
+  }
+  .mar {
+    flex-direction: column;
+  }
+  .venha {
+    height: 270%;
+  }
+  .venha button {
+    width: 230px;
+    font-size: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+  .venha h1 {
+    font-size: 110%;
+    margin: 10px;
+  }
+  .box-2 {
+    flex-direction: column;
+  }
+  .box-pro button {
+    width: 100px;
+    font-size: 90%;
+  }
+  .garantia {
+    flex-direction: column;
+    height: 130vh;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .tes {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .tes p {
+    font-size: 110%;
+  }
+  .tes h2 {
+    margin-top: 40px;
+    font-size: 180%;
+  }
+  .tes h1 {
+    font-size: 200%;
+  }
+  .img-garantia {
+    align-items: center;
+  }
+  .img-garantia img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .produto img {
+    margin-top: 20px;
+    width: 60%;
+  }
+  .venha h1 {
+    font-size: 160%;
+  }
+  .carrossel{
+    height: 200px;
+  }
+  .problemas h2{
+    margin: 0;
+  }
+  .junte-se{
+    height: 50rem;
+  }
+  .problemas,.motivos,.sobre,.header{
+    height: 45rem;
+  }
+  .venha,.garantia{
+    height: 150%;
+
+  }
+}
+@media screen and (orientation: landscape){
+.conteiner{
+  width: 1200px;
+}
+.motivos{
+  height: 50rem;
+}
+.garantia{
+  font-size: 40%;
+}
+.garantia p{
+  margin-bottom: 30px;
+}
+}
